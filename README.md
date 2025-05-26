@@ -39,6 +39,20 @@ Cada entidad cuenta con:
 
 ---
 
+## Estructura del Proyecto y Microservicios
+
+El proyecto está organizado de forma modular, simulando una arquitectura basada en microservicios por entidad. Cada entidad (Usuario, Producto, Pedido, Entrega) cuenta con:
+
+- Un controlador REST (`@RestController`)
+- Un servicio de negocio (`@Service`)
+- Un repositorio (`@Repository`)
+- Su modelo de datos (`@Entity`)
+- Su DTO para transferencia de datos
+
+Esto permite una estructura escalable que puede adaptarse a una arquitectura de microservicios distribuida en futuras etapas del proyecto.
+
+---
+
 ## Endpoints disponibles
 
 | Recurso   | Método | Endpoint              | Descripción básica                        |
