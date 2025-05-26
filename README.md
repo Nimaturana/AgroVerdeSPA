@@ -1,6 +1,4 @@
-<p align="center">
 ![Imagen Proyecto](https://github.com/user-attachments/assets/be5732a6-73c7-4ae2-b1fd-e8a3af7685d4)
-</p>
 
 # AgroVerde SPA - Transformación Digital para La Agricultura Organica
 
