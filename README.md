@@ -55,15 +55,26 @@ Esto permite una estructura escalable que puede adaptarse a una arquitectura de 
 
 ## Endpoints disponibles
 
-| Recurso   | Método | Endpoint              | Descripción básica                        |
-|-----------|--------|------------------------|--------------------------------------------|
-| Usuario   | GET    | `/api/usuarios`        | Listar todos los usuarios                  |
-| Producto  | GET    | `/api/productos`       | Listar todos los productos                 |
-| Pedido    | GET    | `/api/pedidos`         | Listar pedidos realizados                  |
-| Entrega   | GET    | `/api/entregas`        | Listar entregas programadas                |
+| Recurso   | Método  | Endpoint              | Descripción básica                        |
+|-----------|---------|------------------------|--------------------------------------------|
+| Usuario   | GET     | `/api/usuarios`        | Listar todos los usuarios                  |
+| Usuario   | POST    | `/api/usuarios`        | Crear un nuevo usuario                     |
+| Usuario   | PUT     | `/api/usuarios/{id}`   | Actualizar un usuario por ID               |
+| Usuario   | DELETE  | `/api/usuarios/{id}`   | Eliminar un usuario por ID                 |
+| Producto  | GET     | `/api/productos`       | Listar todos los productos                 |
+| Producto  | POST    | `/api/productos`       | Crear un nuevo producto                    |
+| Producto  | PUT     | `/api/productos/{id}`  | Actualizar un producto por ID              |
+| Producto  | DELETE  | `/api/productos/{id}`  | Eliminar un producto por ID                |
+| Pedido    | GET     | `/api/pedidos`         | Listar pedidos realizados                  |
+| Pedido    | POST    | `/api/pedidos`         | Crear un nuevo pedido                      |
+| Pedido    | PUT     | `/api/pedidos/{id}`    | Actualizar un pedido por ID                |
+| Pedido    | DELETE  | `/api/pedidos/{id}`    | Eliminar un pedido por ID                  |
+| Entrega   | GET     | `/api/entregas`        | Listar entregas programadas                |
+| Entrega   | POST    | `/api/entregas`        | Crear una nueva entrega                    |
+| Entrega   | PUT     | `/api/entregas/{id}`   | Actualizar una entrega por ID              |
+| Entrega   | DELETE  | `/api/entregas/{id}`   | Eliminar una entrega por ID                |
 
 ---
-
 
 ## Pruebas de funcionamiento (RA3)
 
@@ -71,8 +82,9 @@ Las pruebas de las APIs fueron realizadas con **Postman**, verificando lo siguie
 
 - Inserción de datos con `POST`
 - Consulta de datos con `GET`
+- Actualización de registros con `PUT`
 - Eliminación de datos con `DELETE`
-- Validación de respuestas correctas (status 200, 201)
+- Validación de respuestas correctas (status 200, 201, 204)
 
 ---
 
