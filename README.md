@@ -88,6 +88,26 @@ Las pruebas de las APIs fueron realizadas con **Postman**, verificando lo siguie
 
 ---
 
+## Capturas de pantalla de Postman
+
+-Crear Producto (POST /api/productos)
+![image](https://github.com/user-attachments/assets/f33882f7-d7ed-48a1-92e9-c2fbcd2c1bad)
+
+
+-Listar Productos (GET /api/productos)
+![image](https://github.com/user-attachments/assets/c8fe2b34-9ea2-4247-9f92-96cf46736ce8)
+
+
+-Actualizar Producto (PUT /api/productos/{id})
+![image](https://github.com/user-attachments/assets/de45c007-fcb3-496d-ac83-d44f55ae7ca9)
+
+
+-Eliminacion Producto (DELETE /api/productos/{id})
+![image](https://github.com/user-attachments/assets/b8f82c71-192c-4a92-a0fd-e33a5f5eec94)
+
+
+---
+
 ## Página de inicio
 
 La aplicación muestra una interfaz inicial y descriptiva, Tecnologias usadas para la creacion de esta, los perfiles del sistema y accesos a las APIs.
@@ -111,6 +131,14 @@ La aplicación muestra una interfaz inicial y descriptiva, Tecnologias usadas pa
 
 ---
 
+## Instalacion 
+```
+bash
+git clone https://github.com/Nimaturana/PruebaFullS.git
+cd PruebaFullS
+```
+
+---
 ##  Propuesta de workflow
 
 name: CI AgroVerde
