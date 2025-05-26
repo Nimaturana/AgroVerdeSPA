@@ -156,7 +156,7 @@ O abriendo AgroVerdeSpaApplication.java haciendo click en Ejecutar ▶️
 
 4. Acceder a las APIs desde Postman
 ```
-http://localhost:8080/api/(api que quieras ingresar)
+http://localhost:8080/api/(api que desees ingresar)
 ```
 
 ---
