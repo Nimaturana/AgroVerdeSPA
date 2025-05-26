@@ -108,3 +108,33 @@ La aplicación muestra una interfaz inicial y descriptiva, Tecnologias usadas pa
 - Dependecias de Oracle recomendadas por Profesor usadas.
 - Proyecto probado y funcional conectado a Oracle Cloud via Wallet.
 
+
+---
+
+##  Propuesta de workflow
+
+name: CI AgroVerde
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Configurar Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Construir con Maven
+      run: mvn clean install
