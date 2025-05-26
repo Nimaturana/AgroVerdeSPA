@@ -140,11 +140,12 @@ cd PruebaFullS
 Ejecucion de la aplicacion 
 1. Configura correctamente la base de datos Oracle y la Wallet.
 2. Verifica que el archivo [application.properties] tenga la siguiente configuracion junto tus datos.
-   
+
 spring.datasource.url=jdbc:oracle:thin:@TU_WALLET_DB_HIGH
 spring.datasource.username=tu_usuario  
 spring.datasource.password=tu_contraseña
-spring.jpa.hibernate.ddl-auto=update     `Nota: Puedes usar "create-drop" para que cada vez que reinicies la aplicacion la informacion de las APIs sean borradas.` 
+spring.jpa.hibernate.ddl-auto=update     
+`Nota: Puedes usar "create-drop" para que cada vez que reinicies la aplicacion la informacion de las APIs sean borradas.` 
 
 3. Ejecutar proyecto desde la consola
 ```
