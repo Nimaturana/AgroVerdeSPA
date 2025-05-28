@@ -30,7 +30,7 @@ Consiste en la implementación de una solución tecnológica escalable para la e
 - **Entrega**: Logística de entrega de los pedidos.
 
 Cada entidad cuenta con:
-- `@Entity` (modelo de datos)
+- `@Entity` modelo de datos
 - `@Repository` para acceso a datos
 - `@RestController` para exponer APIs
 - `DTO` para transporte de datos
@@ -134,8 +134,8 @@ La aplicación muestra una interfaz inicial y descriptiva, Tecnologias usadas pa
 ## Instalacion 
 ```
 bash
-git clone https://github.com/Nimaturana/PruebaFullS.git
-cd PruebaFullS
+git clone https://github.com/Nimaturana/AgroVerdeSPA.git
+cd AgroVerdeSPA
 ```
 Ejecucion de la aplicacion 
 1. Configura correctamente la base de datos Oracle y la Wallet.
@@ -143,9 +143,9 @@ Ejecucion de la aplicacion
 
 spring.datasource.url=jdbc:oracle:thin:@TU_WALLET_DB_HIGH
 
-spring.datasource.username=tu_usuario  
+spring.datasource.username=tu_usuario_BD
 
-spring.datasource.password=tu_contraseña
+spring.datasource.password=tu_contraseña_BD
 
 spring.jpa.hibernate.ddl-auto=update     
 `Nota: Puedes usar "create-drop" para que cada vez que reinicies la aplicacion la informacion de las APIs sean borradas.` 
