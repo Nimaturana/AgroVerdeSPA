@@ -9,4 +9,8 @@ public class AgroVerdeSpaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AgroVerdeSpaApplication.class, args);
 	}
+	// link directo Swagger 
+	// http://localhost:8080/doc/swagger-ui/index.html
+	// usuario: admin
+	// contraseña: 1234
 }
