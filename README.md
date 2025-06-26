@@ -123,6 +123,7 @@ Se ha implementado **HATEOAS** para todas las entidades principales (Usuario, Pr
 
 ### **Ejemplo de respuesta con HATEOAS en Productos**:
 
+```json
 {
   "id": 3,
   "nombre": "Caja de mangos",
@@ -141,6 +142,7 @@ Se ha implementado **HATEOAS** para todas las entidades principales (Usuario, Pr
     }
   }
 }
+```
 
 ---
 
