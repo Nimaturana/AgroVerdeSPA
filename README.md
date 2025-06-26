@@ -124,22 +124,24 @@ Se ha implementado **HATEOAS** para todas las entidades principales (Usuario, Pr
 ### **Ejemplo de respuesta con HATEOAS en Productos**:
 
 {
-        "id": 3,
-        "nombre": "Caja de mangos",
-        "tipo": "Mangos",
-        "stock": 13,
-        "precio": 15000,
-        "_links": {
-          "productos": {
-            "href": "http://localhost:8080/api/productos"
-          },
-          "actualizar": {
-            "href": "http://localhost:8080/api/productos/3"
-          },
-          "eliminar": {
-            "href": "http://localhost:8080/api/productos/3"
-          }
-        }
+  "id": 3,
+  "nombre": "Caja de mangos",
+  "tipo": "Mangos",
+  "stock": 13,
+  "precio": 15000,
+  "_links": {
+    "productos": {
+      "href": "http://localhost:8080/api/productos"
+    },
+    "actualizar": {
+      "href": "http://localhost:8080/api/productos/3"
+    },
+    "eliminar": {
+      "href": "http://localhost:8080/api/productos/3"
+    }
+  }
+}
+
 ---
 
 ## Capturas de pantalla utilizando Swagger
@@ -195,9 +197,11 @@ La aplicación muestra una interfaz inicial y descriptiva, Tecnologias usadas pa
 ---
 
 ## Instalacion 
+```
 bash
-git clone https://github.com/Nimaturana/AgroVerdeSPA.git
-cd AgroVerdeSPA
+git clone https://github.com/Nimaturana/PruebaFullS.git
+cd PruebaFullS
+```
 
 Ejecucion de la aplicacion 
 1. Configura correctamente la base de datos Oracle y la Wallet.
@@ -213,14 +217,22 @@ spring.jpa.hibernate.ddl-auto=update
 Nota: Puedes usar "create-drop" para que cada vez que reinicies la aplicacion la informacion de las APIs sean borradas. 
 
 3. Ejecutar proyecto desde la consola
+```
 bash
 ./mvnw spring-boot:run
+```
 
 O abriendo AgroVerdeSpaApplication.java haciendo click en Ejecutar ▶️
 
 4. Acceder a las APIs desde Postman
+```
 http://localhost:8080/api/(api que desees ingresar)
+```
+5. Acceder al Swagger 
 
+```
+http://localhost:8080/doc/swagger-ui/index.html
+```
 
 ---
 ##  Propuesta de workflow
