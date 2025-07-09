@@ -1,32 +1,39 @@
-image: maven:4.0.0-jdk-17
+name: CI AgroVerde
 
-stages:
-  - build
-  - test
-  - package
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-build:
-  stage: build
-  script:
-    - mvn clean compile
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - .m2/repository
+jobs:
+  build:
 
-test:
-  stage: test
-  script:
-    - mvn test
-  artifacts:
-    when: always
-    reports:
-      junit: target/surefire-reports/*.xml
+    runs-on: ubuntu-latest
 
-package:
-  stage: package
-  script:
-    - mvn package -DskipTests
-  artifacts:
-    paths:
-      - target/*.jar
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Cache Maven dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Compile
+      run: mvn clean compile
+
+    - name: Test
+      run: mvn test
+
+    - name: Package (skip tests)
+      run: mvn package -DskipTests
