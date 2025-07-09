@@ -1,0 +1,32 @@
+image: maven:4.0.0-jdk-17
+
+stages:
+  - build
+  - test
+  - package
+
+build:
+  stage: build
+  script:
+    - mvn clean compile
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .m2/repository
+
+test:
+  stage: test
+  script:
+    - mvn test
+  artifacts:
+    when: always
+    reports:
+      junit: target/surefire-reports/*.xml
+
+package:
+  stage: package
+  script:
+    - mvn package -DskipTests
+  artifacts:
+    paths:
+      - target/*.jar
