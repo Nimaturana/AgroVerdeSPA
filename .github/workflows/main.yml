@@ -33,9 +33,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-m2-
 
-      - name: Run tests with debug
-        run: mvn clean test -e -X
-
       - name: Upload Surefire reports on failure
         if: failure()
         uses: actions/upload-artifact@v3
