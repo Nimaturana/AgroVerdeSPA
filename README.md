@@ -235,6 +235,10 @@ http://localhost:8080/api/(api que desees ingresar)
 ```
 http://localhost:8080/doc/swagger-ui/index.html
 ```
+---
+## Análisis Ético del Desarrollo
+Se consideraron principios de **privacidad**, resguardando datos sensibles como direcciones y contactos de clientes, y evitando exponer datos reales en pruebas o documentación. Se aplicó **responsabilidad profesional** mediante el uso de dependencias actualizadas, pruebas unitarias con JUnit y la documentación de la API con Swagger para facilitar el uso y la verificación. También se fomentó la **empleabilidad** incorporando prácticas modernas como CI/CD en GitHub Actions, separación de capas (controladores, servicios, repositorios) y uso de HATEOAS para enriquecer las respuestas RESTful.
+
 
 ---
 ##  Propuesta de workflow
