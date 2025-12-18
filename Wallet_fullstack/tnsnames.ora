@@ -1,8 +1,0 @@
-fullstack_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g2d8866b0d80c2f_fullstack_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
-
-fullstack_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g2d8866b0d80c2f_fullstack_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
-
-fullstack_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g2d8866b0d80c2f_fullstack_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
-
-
-
